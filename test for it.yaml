@@ -1,0 +1,19 @@
+id: test for pr
+info:
+  name: test for it
+  author: tttt
+  severity: medium
+  description: Describe the vulnerability or detection rule here
+  reference:
+    - https://example.com/reference
+  metadata:
+    max-request: 1
+  tags: web,unauth
+http:
+  - method: GET
+    path:
+      - /
+    matchers:
+      - type: word
+        words:
+          - success
